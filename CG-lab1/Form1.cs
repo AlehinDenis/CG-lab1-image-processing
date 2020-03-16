@@ -62,5 +62,11 @@ namespace CG_lab1
             }
             progressBar1.Value = 0;
         }
+
+        private void размытиеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new BlurFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }

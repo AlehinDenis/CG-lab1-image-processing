@@ -31,7 +31,7 @@ namespace CG_lab1
 
         public int Clamp(int value, int min, int max)
         {
-            if (value < max)
+            if (value < min)
                 return min;
             if (value > max)
                 return max;
