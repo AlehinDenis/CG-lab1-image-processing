@@ -7,3 +7,12 @@ C:\Users\ПК\Desktop\CG-lab1\CG-lab1\obj\Debug\CG_lab1.Properties.Resources.res
 C:\Users\ПК\Desktop\CG-lab1\CG-lab1\obj\Debug\CG-lab1.csproj.GenerateResource.cache
 C:\Users\ПК\Desktop\CG-lab1\CG-lab1\obj\Debug\CG-lab1.exe
 C:\Users\ПК\Desktop\CG-lab1\CG-lab1\obj\Debug\CG-lab1.pdb
+C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\bin\Debug\CG-lab1.exe.config
+C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\bin\Debug\CG-lab1.exe
+C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\bin\Debug\CG-lab1.pdb
+C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\obj\Debug\CG-lab1.csprojAssemblyReference.cache
+C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\obj\Debug\CG_lab1.Form1.resources
+C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\obj\Debug\CG_lab1.Properties.Resources.resources
+C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\obj\Debug\CG-lab1.csproj.GenerateResource.cache
+C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\obj\Debug\CG-lab1.exe
+C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\obj\Debug\CG-lab1.pdb
