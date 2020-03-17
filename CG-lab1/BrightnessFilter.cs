@@ -7,16 +7,19 @@ using System.Drawing;
 
 namespace CG_lab1
 {
-    class GrayScaleFilter : Filters
+    class BrightnessFilter : Filters
     {
         protected override Color calculateNewPixelColor(Bitmap sourceImage, int x, int y)
         {
             Color sourceColor = sourceImage.GetPixel(x, y);
 
             // coeff for calculations
-            int intensity = (int)(0.299 * sourceColor.R + 0.587 * sourceColor.G + 0.114 * sourceColor.B);
+            int K = 10;
 
-            Color resultColor = Color.FromArgb(intensity, intensity, intensity);
+            Color resultColor = Color.FromArgb(
+                Clamp(sourceColor.R + K, 0, 255),
+                Clamp(sourceColor.G + K, 0, 255),
+                Clamp(sourceColor.B + K, 0, 255));
             return resultColor;
         }
     }

@@ -77,7 +77,19 @@ namespace CG_lab1
 
         private void оттенкиСерогоToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Filters filter = new GrayScaleFIlter();
+            Filters filter = new GrayScaleFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void сепияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SepiaFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void яркостьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new BrightnessFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
     }
