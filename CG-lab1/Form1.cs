@@ -92,5 +92,11 @@ namespace CG_lab1
             Filters filter = new BrightnessFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void фильтрСобеляToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SobelFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
