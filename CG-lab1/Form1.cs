@@ -104,5 +104,11 @@ namespace CG_lab1
             Filters filter = new SharpnessFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void тиснениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new EmbossingFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
