@@ -141,5 +141,17 @@ namespace CG_lab1
             Filters filter = new MoveUpFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void горизонтальныеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new FirstWavingFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void вертикальныеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SecondWavingFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
