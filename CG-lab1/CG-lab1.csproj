@@ -60,6 +60,10 @@
     <Compile Include="GrayScaleFilter.cs" />
     <Compile Include="InvertFilter.cs" />
     <Compile Include="MatrixFilter.cs" />
+    <Compile Include="MoveDownFilter.cs" />
+    <Compile Include="MoveLeftFilter.cs" />
+    <Compile Include="MoveRightFilter.cs" />
+    <Compile Include="MoveUpFilter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RotationFilter.cs" />

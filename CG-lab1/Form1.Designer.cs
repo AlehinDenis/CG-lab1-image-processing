@@ -38,6 +38,7 @@
             this.оттенкиСерогоToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сепияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.яркостьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.вращениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.матричныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.размытиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.фильтраГауссаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +48,11 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.вращениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.перемещениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.влевоToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.вправоToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.внизToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.вверхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -103,7 +108,8 @@
             this.оттенкиСерогоToolStripMenuItem,
             this.сепияToolStripMenuItem,
             this.яркостьToolStripMenuItem,
-            this.вращениеToolStripMenuItem});
+            this.вращениеToolStripMenuItem,
+            this.перемещениеToolStripMenuItem});
             this.точечныеToolStripMenuItem.Name = "точечныеToolStripMenuItem";
             this.точечныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.точечныеToolStripMenuItem.Text = "Точечные";
@@ -135,6 +141,13 @@
             this.яркостьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.яркостьToolStripMenuItem.Text = "Яркость";
             this.яркостьToolStripMenuItem.Click += new System.EventHandler(this.яркостьToolStripMenuItem_Click);
+            // 
+            // вращениеToolStripMenuItem
+            // 
+            this.вращениеToolStripMenuItem.Name = "вращениеToolStripMenuItem";
+            this.вращениеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.вращениеToolStripMenuItem.Text = "Вращение";
+            this.вращениеToolStripMenuItem.Click += new System.EventHandler(this.вращениеToolStripMenuItem_Click);
             // 
             // матричныеToolStripMenuItem
             // 
@@ -208,12 +221,44 @@
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // вращениеToolStripMenuItem
+            // перемещениеToolStripMenuItem
             // 
-            this.вращениеToolStripMenuItem.Name = "вращениеToolStripMenuItem";
-            this.вращениеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.вращениеToolStripMenuItem.Text = "Вращение";
-            this.вращениеToolStripMenuItem.Click += new System.EventHandler(this.вращениеToolStripMenuItem_Click);
+            this.перемещениеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.влевоToolStripMenuItem,
+            this.вправоToolStripMenuItem,
+            this.внизToolStripMenuItem,
+            this.вверхToolStripMenuItem});
+            this.перемещениеToolStripMenuItem.Name = "перемещениеToolStripMenuItem";
+            this.перемещениеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.перемещениеToolStripMenuItem.Text = "Перемещение";
+            // 
+            // влевоToolStripMenuItem
+            // 
+            this.влевоToolStripMenuItem.Name = "влевоToolStripMenuItem";
+            this.влевоToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.влевоToolStripMenuItem.Text = "Влево";
+            this.влевоToolStripMenuItem.Click += new System.EventHandler(this.влевоToolStripMenuItem_Click);
+            // 
+            // вправоToolStripMenuItem
+            // 
+            this.вправоToolStripMenuItem.Name = "вправоToolStripMenuItem";
+            this.вправоToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.вправоToolStripMenuItem.Text = "Вправо";
+            this.вправоToolStripMenuItem.Click += new System.EventHandler(this.вправоToolStripMenuItem_Click);
+            // 
+            // внизToolStripMenuItem
+            // 
+            this.внизToolStripMenuItem.Name = "внизToolStripMenuItem";
+            this.внизToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.внизToolStripMenuItem.Text = "Вниз";
+            this.внизToolStripMenuItem.Click += new System.EventHandler(this.внизToolStripMenuItem_Click);
+            // 
+            // вверхToolStripMenuItem
+            // 
+            this.вверхToolStripMenuItem.Name = "вверхToolStripMenuItem";
+            this.вверхToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.вверхToolStripMenuItem.Text = "Вверх";
+            this.вверхToolStripMenuItem.Click += new System.EventHandler(this.вверхToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -257,6 +302,11 @@
         private System.Windows.Forms.ToolStripMenuItem резкостьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem тиснениеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem вращениеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem перемещениеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem влевоToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem вправоToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem внизToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem вверхToolStripMenuItem;
     }
 }
 

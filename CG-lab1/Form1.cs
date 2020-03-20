@@ -116,5 +116,30 @@ namespace CG_lab1
             Filters filter = new RotationFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+
+        private void внизToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new MoveDownFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void вправоToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new MoveRightFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void влевоToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new MoveLeftFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void вверхToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new MoveUpFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
