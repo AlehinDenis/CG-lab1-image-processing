@@ -44,6 +44,9 @@
             this.вправоToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.внизToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вверхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.волныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.горизонтальныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.вертикальныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.матричныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.размытиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.фильтраГауссаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,9 +56,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.волныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.горизонтальныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.вертикальныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.эффектстеклаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -113,7 +114,8 @@
             this.яркостьToolStripMenuItem,
             this.вращениеToolStripMenuItem,
             this.перемещениеToolStripMenuItem,
-            this.волныToolStripMenuItem});
+            this.волныToolStripMenuItem,
+            this.эффектстеклаToolStripMenuItem});
             this.точечныеToolStripMenuItem.Name = "точечныеToolStripMenuItem";
             this.точечныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.точечныеToolStripMenuItem.Text = "Точечные";
@@ -192,6 +194,29 @@
             this.вверхToolStripMenuItem.Text = "Вверх";
             this.вверхToolStripMenuItem.Click += new System.EventHandler(this.вверхToolStripMenuItem_Click);
             // 
+            // волныToolStripMenuItem
+            // 
+            this.волныToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.горизонтальныеToolStripMenuItem,
+            this.вертикальныеToolStripMenuItem});
+            this.волныToolStripMenuItem.Name = "волныToolStripMenuItem";
+            this.волныToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.волныToolStripMenuItem.Text = "Волны";
+            // 
+            // горизонтальныеToolStripMenuItem
+            // 
+            this.горизонтальныеToolStripMenuItem.Name = "горизонтальныеToolStripMenuItem";
+            this.горизонтальныеToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.горизонтальныеToolStripMenuItem.Text = "Горизонтальные";
+            this.горизонтальныеToolStripMenuItem.Click += new System.EventHandler(this.горизонтальныеToolStripMenuItem_Click);
+            // 
+            // вертикальныеToolStripMenuItem
+            // 
+            this.вертикальныеToolStripMenuItem.Name = "вертикальныеToolStripMenuItem";
+            this.вертикальныеToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.вертикальныеToolStripMenuItem.Text = "Вертикальные";
+            this.вертикальныеToolStripMenuItem.Click += new System.EventHandler(this.вертикальныеToolStripMenuItem_Click);
+            // 
             // матричныеToolStripMenuItem
             // 
             this.матричныеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -264,28 +289,12 @@
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // волныToolStripMenuItem
+            // эффектстеклаToolStripMenuItem
             // 
-            this.волныToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.горизонтальныеToolStripMenuItem,
-            this.вертикальныеToolStripMenuItem});
-            this.волныToolStripMenuItem.Name = "волныToolStripMenuItem";
-            this.волныToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.волныToolStripMenuItem.Text = "Волны";
-            // 
-            // горизонтальныеToolStripMenuItem
-            // 
-            this.горизонтальныеToolStripMenuItem.Name = "горизонтальныеToolStripMenuItem";
-            this.горизонтальныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.горизонтальныеToolStripMenuItem.Text = "Горизонтальные";
-            this.горизонтальныеToolStripMenuItem.Click += new System.EventHandler(this.горизонтальныеToolStripMenuItem_Click);
-            // 
-            // вертикальныеToolStripMenuItem
-            // 
-            this.вертикальныеToolStripMenuItem.Name = "вертикальныеToolStripMenuItem";
-            this.вертикальныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.вертикальныеToolStripMenuItem.Text = "Вертикальные";
-            this.вертикальныеToolStripMenuItem.Click += new System.EventHandler(this.вертикальныеToolStripMenuItem_Click);
+            this.эффектстеклаToolStripMenuItem.Name = "эффектстеклаToolStripMenuItem";
+            this.эффектстеклаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.эффектстеклаToolStripMenuItem.Text = "Эффект \"стекла\"";
+            this.эффектстеклаToolStripMenuItem.Click += new System.EventHandler(this.эффектстеклаToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -337,6 +346,7 @@
         private System.Windows.Forms.ToolStripMenuItem волныToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem горизонтальныеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem вертикальныеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem эффектстеклаToolStripMenuItem;
     }
 }
 
