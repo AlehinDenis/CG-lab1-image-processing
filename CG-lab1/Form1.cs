@@ -95,11 +95,7 @@ namespace CG_lab1
             backgroundWorker1.RunWorkerAsync(filter);
         }
 
-        private void резкостьToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Filters filter = new SharpnessFilter();
-            backgroundWorker1.RunWorkerAsync(filter);
-        }
+        private void резкостьToolStripMenuItem_Click(object sender, EventArgs e) { }
 
         private void тиснениеToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -165,6 +161,18 @@ namespace CG_lab1
         private void сильноеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Filters filter = new MotionBlurFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void сильнаяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SecondSharpnessFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void слабаяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SharpnessFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
     }

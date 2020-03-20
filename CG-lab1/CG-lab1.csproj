@@ -69,6 +69,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RotationFilter.cs" />
+    <Compile Include="SecondSharpnessFilter.cs" />
     <Compile Include="SecondWavingFilter.cs" />
     <Compile Include="SepiaFilter.cs" />
     <Compile Include="SharpnessFilter.cs" />
