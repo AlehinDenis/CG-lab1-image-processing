@@ -63,11 +63,7 @@ namespace CG_lab1
             progressBar1.Value = 0;
         }
 
-        private void размытиеToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Filters filter = new BlurFilter();
-            backgroundWorker1.RunWorkerAsync(filter);
-        }
+        private void размытиеToolStripMenuItem_Click(object sender, EventArgs e) { }
 
         private void фильтраГауссаToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -157,6 +153,18 @@ namespace CG_lab1
         private void эффектстеклаToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Filters filter = new GlassFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void слабоеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new BlurFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void сильноеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new MotionBlurFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
     }

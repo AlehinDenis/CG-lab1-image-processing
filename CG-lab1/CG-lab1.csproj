@@ -61,6 +61,7 @@
     <Compile Include="GrayScaleFilter.cs" />
     <Compile Include="InvertFilter.cs" />
     <Compile Include="MatrixFilter.cs" />
+    <Compile Include="MotionBlurFilter.cs" />
     <Compile Include="MoveDownFilter.cs" />
     <Compile Include="MoveLeftFilter.cs" />
     <Compile Include="MoveRightFilter.cs" />
