@@ -66,6 +66,7 @@
     <Compile Include="MoveLeftFilter.cs" />
     <Compile Include="MoveRightFilter.cs" />
     <Compile Include="MoveUpFilter.cs" />
+    <Compile Include="PrewittOperatorFilter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RotationFilter.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="SecondWavingFilter.cs" />
     <Compile Include="SepiaFilter.cs" />
     <Compile Include="SharpnessFilter.cs" />
+    <Compile Include="SharrOperatorFilter.cs" />
     <Compile Include="SobelFilter.cs" />
     <Compile Include="FirstWavingFilter.cs" />
     <EmbeddedResource Include="Form1.resx">

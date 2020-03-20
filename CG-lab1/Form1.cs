@@ -175,5 +175,17 @@ namespace CG_lab1
             Filters filter = new SharpnessFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void операторЩарраToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SharrOperatorFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void операторПриюттаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new PrewittOperatorFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
