@@ -221,5 +221,11 @@ namespace CG_lab1
             Filters filter = new GrayWorldFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void линейнаяКоррекцияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new HistogramLinearStretchFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }

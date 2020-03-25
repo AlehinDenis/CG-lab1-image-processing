@@ -16,10 +16,10 @@ namespace CG_lab1
 
         void calculateAverageBrightness(Bitmap sourceImage)
         {
-            for(int i = 0; i < sourceImage.Height; i++)
-                for(int j = 0; j < sourceImage.Width; j++)
+            for(int i = 0; i < sourceImage.Width; i++)
+                for(int j = 0; j < sourceImage.Height; j++)
                 {
-                    Color sourceColor = sourceImage.GetPixel(j, i);
+                    Color sourceColor = sourceImage.GetPixel(i, j);
                     avgR += sourceColor.R;
                     avgG += sourceColor.G;
                     avgB += sourceColor.B;

@@ -60,6 +60,7 @@
     <Compile Include="GlassFilter.cs" />
     <Compile Include="GrayScaleFilter.cs" />
     <Compile Include="GrayWorldFilter.cs" />
+    <Compile Include="HistogramLinearStretchFilter.cs" />
     <Compile Include="InvertFilter.cs" />
     <Compile Include="MatrixFilter.cs" />
     <Compile Include="MotionBlurFilter.cs" />
