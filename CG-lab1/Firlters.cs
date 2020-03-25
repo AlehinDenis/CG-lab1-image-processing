@@ -12,8 +12,9 @@ namespace CG_lab1
     {
         protected abstract Color calculateNewPixelColor(Bitmap sourceImage, int x, int y);
 
-        public Bitmap processImage(Bitmap sourceImage, BackgroundWorker worker)
+        public Bitmap processImage(Bitmap sourceImage, BackgroundWorker worker, Stack<Bitmap> images)
         {
+            images.Push(sourceImage);
             Bitmap resultImage = new Bitmap(sourceImage.Width, sourceImage.Height);
             for (int i = 0; i < sourceImage.Width; i++)
             {

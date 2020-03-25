@@ -41,7 +41,8 @@ namespace CG_lab1
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            Bitmap newImage = ((Filters)e.Argument).processImage(image, backgroundWorker1);
+            Stack<Bitmap> images = new Stack<Bitmap>();
+            Bitmap newImage = ((Filters)e.Argument).processImage(image, backgroundWorker1, images);
             if (backgroundWorker1.CancellationPending != true)
                 image = newImage;
         }
@@ -213,6 +214,12 @@ namespace CG_lab1
                 pictureBox1.Refresh();
             }
             
+        }
+
+        private void серыйМирToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new GrayWorldFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
         }
     }
 }
