@@ -22,7 +22,7 @@ namespace CG_lab1
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = "Image files|*.png;*.jpg;*.bmp|All files(*.*)|*.*";
-            if(dialog.ShowDialog() == DialogResult.OK)
+            if (dialog.ShowDialog() == DialogResult.OK)
             {
                 image = new Bitmap(dialog.FileName);
                 pictureBox1.Image = image;
@@ -186,6 +186,17 @@ namespace CG_lab1
         {
             Filters filter = new PrewittOperatorFilter();
             backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "JPG(*.JPG)|*.jpg";
+            dialog.FileName = "Image";
+            if(dialog.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image.Save(dialog.FileName);
+            }
         }
     }
 }
