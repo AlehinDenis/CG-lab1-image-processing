@@ -13,6 +13,8 @@ namespace CG_lab1
     public partial class Form1 : Form
     {
         Bitmap image;
+        Stack<Image> imageHistory = new Stack<Image>();
+
         public Form1()
         {
             InitializeComponent();
@@ -24,6 +26,7 @@ namespace CG_lab1
             dialog.Filter = "Image files|*.png;*.jpg;*.bmp|All files(*.*)|*.*";
             if (dialog.ShowDialog() == DialogResult.OK)
             {
+                imageHistory.Clear();
                 image = new Bitmap(dialog.FileName);
                 pictureBox1.Image = image;
                 pictureBox1.Refresh();
@@ -57,6 +60,7 @@ namespace CG_lab1
         {
             if (!e.Cancelled)
             {
+                imageHistory.Push(pictureBox1.Image);
                 pictureBox1.Image = image;
                 pictureBox1.Refresh();
             }
@@ -197,6 +201,18 @@ namespace CG_lab1
             {
                 pictureBox1.Image.Save(dialog.FileName);
             }
+        }
+
+        private void отменаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (imageHistory.Count == 0)
+                MessageBox.Show("История изменений пуста!");
+            else
+            {
+                pictureBox1.Image = imageHistory.Pop();
+                pictureBox1.Refresh();
+            }
+            
         }
     }
 }
