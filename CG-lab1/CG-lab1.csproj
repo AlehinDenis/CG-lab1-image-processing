@@ -66,6 +66,7 @@
     <Compile Include="HistogramLinearStretchFilter.cs" />
     <Compile Include="InvertFilter.cs" />
     <Compile Include="MatrixFilter.cs" />
+    <Compile Include="MedianFilter.cs" />
     <Compile Include="MotionBlurFilter.cs" />
     <Compile Include="MoveDownFilter.cs" />
     <Compile Include="MoveLeftFilter.cs" />
