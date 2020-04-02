@@ -227,5 +227,17 @@ namespace CG_lab1
             Filters filter = new HistogramLinearStretchFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void расширениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Dilation();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void сужениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Erosion();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
