@@ -41,8 +41,7 @@ namespace CG_lab1
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            Stack<Bitmap> images = new Stack<Bitmap>();
-            Bitmap newImage = ((Filters)e.Argument).processImage(image, backgroundWorker1, images);
+            Bitmap newImage = ((Filters)e.Argument).processImage(image, backgroundWorker1);
             if (backgroundWorker1.CancellationPending != true)
                 image = newImage;
         }
@@ -237,6 +236,18 @@ namespace CG_lab1
         private void сужениеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Filters filter = new Erosion();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void открытиеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Opening();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void закрытиеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Closing();
             backgroundWorker1.RunWorkerAsync(filter);
         }
     }

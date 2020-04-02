@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="BlurFilter.cs" />
     <Compile Include="BrightnessFilter.cs" />
+    <Compile Include="Closing.cs" />
     <Compile Include="Dilation.cs" />
     <Compile Include="EmbossingFilter.cs" />
     <Compile Include="Erosion.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="MoveLeftFilter.cs" />
     <Compile Include="MoveRightFilter.cs" />
     <Compile Include="MoveUpFilter.cs" />
+    <Compile Include="Opening.cs" />
     <Compile Include="PrewittOperatorFilter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
