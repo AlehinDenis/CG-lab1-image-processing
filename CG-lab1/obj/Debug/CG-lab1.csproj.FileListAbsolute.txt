@@ -16,3 +16,4 @@ C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\obj\Debug\CG_lab1.Propert
 C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\obj\Debug\CG-lab1.csproj.GenerateResource.cache
 C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\obj\Debug\CG-lab1.exe
 C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\obj\Debug\CG-lab1.pdb
+C:\Users\ПК\Desktop\CG-lab1-image-processing\CG-lab1\obj\Debug\CG_lab1.Form2.resources

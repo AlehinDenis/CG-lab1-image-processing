@@ -10,25 +10,23 @@ namespace CG_lab1
     class Dilation : Filters
     {
         protected float[,] mask;
-        public Dilation()
+
+        public Dilation(float[,] Mask)
         {
-            const int size = 3;
-            mask = new float[size, size] { { 1, 1, 1 }, { 1, 1, 1 }, { 1, 1, 1 } };
+            mask = Mask;
         }
 
         protected override Color calculateNewPixelColor(Bitmap sourceImage, int x, int y)
         {
-            int radiusX = mask.GetLength(0) / 2;
-            int radiusY = mask.GetLength(1) / 2;
             float resultR = 0;
             float resultG = 0;
             float resultB = 0;
-            for (int j = -radiusY; j <= radiusY; j++)
-                for (int i = -radiusX; i <= radiusX; i++)
+            for (int j = -1; j <= 1; j++)
+                for (int i = -1; i <= 1; i++)
                 {
                     int idX = Clamp(x + i, 0, sourceImage.Width - 1);
                     int idY = Clamp(y + j, 0, sourceImage.Height - 1);
-                    if (mask[i + radiusX, j + radiusY] == 1.0f)
+                    if (mask[i + 1, j + 1] == 1.0f)
                     {
                         resultR = Math.Max(sourceImage.GetPixel(idX, idY).R, resultR);
                         resultG = Math.Max(sourceImage.GetPixel(idX, idY).G, resultG);

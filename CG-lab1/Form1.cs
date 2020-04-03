@@ -194,6 +194,11 @@ namespace CG_lab1
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (pictureBox1.Image == null)
+            {
+                MessageBox.Show("Картинка не загружена");
+                return;
+            }
             SaveFileDialog dialog = new SaveFileDialog();
             dialog.Filter = "JPG(*.JPG)|*.jpg";
             dialog.FileName = "Image";
@@ -210,6 +215,7 @@ namespace CG_lab1
             else
             {
                 pictureBox1.Image = imageHistory.Pop();
+                image = (Bitmap)pictureBox1.Image;
                 pictureBox1.Refresh();
             }
             
@@ -227,27 +233,31 @@ namespace CG_lab1
             backgroundWorker1.RunWorkerAsync(filter);
         }
 
+        float[,] structElem = new float[3, 3]{
+                {1, 1, 1},
+                {1, 1, 1},
+                {1, 1, 1}};
         private void расширениеToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Filters filter = new Dilation();
+            Filters filter = new Dilation(structElem);
             backgroundWorker1.RunWorkerAsync(filter);
         }
 
         private void сужениеToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Filters filter = new Erosion();
+            Filters filter = new Erosion(structElem);
             backgroundWorker1.RunWorkerAsync(filter);
         }
 
         private void открытиеToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Filters filter = new Opening();
+            Filters filter = new Opening(structElem);
             backgroundWorker1.RunWorkerAsync(filter);
         }
 
         private void закрытиеToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Filters filter = new Closing();
+            Filters filter = new Closing(structElem);
             backgroundWorker1.RunWorkerAsync(filter);
         }
 
@@ -255,6 +265,13 @@ namespace CG_lab1
         {
             Filters filter = new MedianFilter();
             backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void задатьСтруктурныйЭлементToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+            structElem = form2.mask;
         }
     }
 }
