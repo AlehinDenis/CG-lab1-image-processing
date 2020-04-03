@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlackHat.cs" />
     <Compile Include="BlurFilter.cs" />
     <Compile Include="BrightnessFilter.cs" />
     <Compile Include="Closing.cs" />
@@ -67,6 +68,7 @@
     </Compile>
     <Compile Include="GaussianFilter.cs" />
     <Compile Include="GlassFilter.cs" />
+    <Compile Include="Grad.cs" />
     <Compile Include="GrayScaleFilter.cs" />
     <Compile Include="GrayWorldFilter.cs" />
     <Compile Include="HistogramLinearStretchFilter.cs" />
@@ -90,6 +92,7 @@
     <Compile Include="SharrOperatorFilter.cs" />
     <Compile Include="SobelFilter.cs" />
     <Compile Include="FirstWavingFilter.cs" />
+    <Compile Include="TopHat.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -273,5 +273,23 @@ namespace CG_lab1
             form2.ShowDialog();
             structElem = form2.mask;
         }
+
+        private void topHatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new TopHat(structElem);
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void blackHatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new BlackHat(structElem);
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void gradToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Grad(structElem);
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }

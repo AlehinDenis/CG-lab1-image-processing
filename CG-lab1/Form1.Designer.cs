@@ -70,11 +70,14 @@
             this.сужениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.закрытиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.задатьСтруктурныйЭлементToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.медианныйФильтрToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.задатьСтруктурныйЭлементToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.topHatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blackHatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gradToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -391,7 +394,10 @@
             this.сужениеToolStripMenuItem,
             this.открытиеToolStripMenuItem,
             this.закрытиеToolStripMenuItem,
-            this.задатьСтруктурныйЭлементToolStripMenuItem});
+            this.задатьСтруктурныйЭлементToolStripMenuItem,
+            this.topHatToolStripMenuItem,
+            this.blackHatToolStripMenuItem,
+            this.gradToolStripMenuItem});
             this.матМорфологияToolStripMenuItem.Name = "матМорфологияToolStripMenuItem";
             this.матМорфологияToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.матМорфологияToolStripMenuItem.Text = "Мат. морфология";
@@ -423,6 +429,13 @@
             this.закрытиеToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.закрытиеToolStripMenuItem.Text = "Закрытие";
             this.закрытиеToolStripMenuItem.Click += new System.EventHandler(this.закрытиеToolStripMenuItem_Click);
+            // 
+            // задатьСтруктурныйЭлементToolStripMenuItem
+            // 
+            this.задатьСтруктурныйЭлементToolStripMenuItem.Name = "задатьСтруктурныйЭлементToolStripMenuItem";
+            this.задатьСтруктурныйЭлементToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.задатьСтруктурныйЭлементToolStripMenuItem.Text = "Задать структурный элемент";
+            this.задатьСтруктурныйЭлементToolStripMenuItem.Click += new System.EventHandler(this.задатьСтруктурныйЭлементToolStripMenuItem_Click);
             // 
             // медианныйФильтрToolStripMenuItem
             // 
@@ -459,12 +472,26 @@
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // задатьСтруктурныйЭлементToolStripMenuItem
+            // topHatToolStripMenuItem
             // 
-            this.задатьСтруктурныйЭлементToolStripMenuItem.Name = "задатьСтруктурныйЭлементToolStripMenuItem";
-            this.задатьСтруктурныйЭлементToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
-            this.задатьСтруктурныйЭлементToolStripMenuItem.Text = "Задать структурный элемент";
-            this.задатьСтруктурныйЭлементToolStripMenuItem.Click += new System.EventHandler(this.задатьСтруктурныйЭлементToolStripMenuItem_Click);
+            this.topHatToolStripMenuItem.Name = "topHatToolStripMenuItem";
+            this.topHatToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.topHatToolStripMenuItem.Text = "TopHat";
+            this.topHatToolStripMenuItem.Click += new System.EventHandler(this.topHatToolStripMenuItem_Click);
+            // 
+            // blackHatToolStripMenuItem
+            // 
+            this.blackHatToolStripMenuItem.Name = "blackHatToolStripMenuItem";
+            this.blackHatToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.blackHatToolStripMenuItem.Text = "BlackHat";
+            this.blackHatToolStripMenuItem.Click += new System.EventHandler(this.blackHatToolStripMenuItem_Click);
+            // 
+            // gradToolStripMenuItem
+            // 
+            this.gradToolStripMenuItem.Name = "gradToolStripMenuItem";
+            this.gradToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.gradToolStripMenuItem.Text = "Grad";
+            this.gradToolStripMenuItem.Click += new System.EventHandler(this.gradToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -538,6 +565,9 @@
         private System.Windows.Forms.ToolStripMenuItem медианныйФильтрToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сужениеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem задатьСтруктурныйЭлементToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem topHatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blackHatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gradToolStripMenuItem;
     }
 }
 
